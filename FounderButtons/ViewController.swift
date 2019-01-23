@@ -19,11 +19,18 @@ class ViewController: UIViewController {
     }
     @IBAction func googleButtonPressed(_ sender: UIButton) {
         topLabel.text = "Larry Page"
+        bottomLabel.text = "Segey Brin"
     }
     @IBAction func rtrButtonPressed(_ sender: UIButton) {
-        bottomLabel.text = "Jennifer Hyman"
+        topLabel.text = "Jennifer Hyman"
+        bottomLabel.text = "Jenny Fleiss"
     }
     
-
+    @IBAction func clearView(_ sender: UIButton) {
+        topLabel.text = ""
+        bottomLabel.text = ""
+            
+    }
+    
 }
 
